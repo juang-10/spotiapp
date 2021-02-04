@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "spotiapp"
+  "defaultProject": "spotiapp",
+  "cli": {
+    "analytics": "3418ca77-87d9-4526-b390-c28033fccbdc"
+  }
 }
