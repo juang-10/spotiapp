@@ -16,6 +16,7 @@ import { ROUTES } from './app.routes';
 
 //Pipes
 import { NoimagePipe } from './pipes/noimage.pipe';
+import { CancionesComponent } from './components/canciones/canciones.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { NoimagePipe } from './pipes/noimage.pipe';
     SearchComponent,
     ArtistaComponent,
     NavbarComponent,
+    CancionesComponent,
     NoimagePipe
   ],
   imports: [
