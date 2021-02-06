@@ -7,8 +7,7 @@ import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
-import { SearchComponent } from './components/search/search.component';
-import { ArtistaComponent } from './components/artista/artista.component';
+import { ArtistasComponent } from './components/artistas/artistas.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 
 //Importar rutas
@@ -22,8 +21,7 @@ import { CancionesComponent } from './components/canciones/canciones.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    SearchComponent,
-    ArtistaComponent,
+    ArtistasComponent,
     NavbarComponent,
     CancionesComponent,
     NoimagePipe
