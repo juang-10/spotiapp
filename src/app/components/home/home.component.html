@@ -5,7 +5,7 @@
 <div class="row row-cols-3 row-cols-md-3 g-4">
     <div *ngFor="let cancion of nuevasCanciones" class="col">
         <div class="card">
-        <img [src]="cancion.images[0].url" class="card-img-top" alt="image-cancion">
+        <img [src]="cancion.images | noimage" class="card-img-top" alt="image-cancion">
         <div class="card-body">
             <h5 class="card-title">
                 {{ cancion.name }}
