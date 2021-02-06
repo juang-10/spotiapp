@@ -30,13 +30,18 @@ export class SpotifyService {
 
   getNewReleases() {
     return  this.getQuery('browse/new-releases?country=CO&limit=6')
-      .pipe( map( (data:any) => data['albums'].items) );  
+      .pipe( map( (data:any) => data.albums.items) );  
     }
   
   getArtista( termino: string ){
 
     return  this.getQuery(`search?q=${ termino }&type=artist&limit=15`)
-        .pipe( map( (data:any) => data['artists'].items) );
+        .pipe( map( (data:any) => data.artists.items) );
+    }
+ 
+  getCanciones( termino: string){
+    return  this.getQuery(`search?q=${ termino }&type=track&limit=15`)
+      .pipe( map( (data:any) => data.tracks.items) );
     }
 
 }
